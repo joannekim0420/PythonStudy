@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bea26142-ab50-4021-981d-58652ae2476e" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/PythonStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonStudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+>>>>>>> c7bad9db2fd4ac6385f988bc191667eee4a6ed70
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,28 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.11.image_min_max">
-    <configuration name="07.bitwise_op" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonStudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/openCV/05Operations_on_Arrays" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/openCV/05Operations_on_Arrays/07.bitwise_op.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Q13">
     <configuration name="08.bitwise_overlap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,6 +67,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/openCV/05Operations_on_Arrays/11.image_min_max.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Q13" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonAlgorithm/implementation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonAlgorithm/implementation/Q13.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Q13" />
         <item itemvalue="Python.11.image_min_max" />
         <item itemvalue="Python.08.bitwise_overlap" />
         <item itemvalue="Python.Q15_BFS" />
         <item itemvalue="Python.Q15_dijkstra" />
-        <item itemvalue="Python.07.bitwise_op" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +164,7 @@
       <screen x="0" y="0" width="1473" height="864" />
     </state>
     <state x="448" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1473.864@0.0.1473.864" timestamp="1621414717033" />
+<<<<<<< HEAD
     <state width="1452" height="274" key="GridCell.Tab.0.bottom" timestamp="1622577835873">
       <screen x="0" y="0" width="1473" height="864" />
     </state>
@@ -191,6 +197,40 @@
       <screen x="0" y="0" width="1473" height="864" />
     </state>
     <state width="1452" height="277" key="GridCell.Tab.1.right/0.0.1473.864@0.0.1473.864" timestamp="1622577835854" />
+=======
+    <state width="1452" height="274" key="GridCell.Tab.0.bottom" timestamp="1622576898203">
+      <screen x="0" y="0" width="1473" height="864" />
+    </state>
+    <state width="1452" height="274" key="GridCell.Tab.0.bottom/0.0.1473.864@0.0.1473.864" timestamp="1622576898203" />
+    <state width="1452" height="274" key="GridCell.Tab.0.center" timestamp="1622576898202">
+      <screen x="0" y="0" width="1473" height="864" />
+    </state>
+    <state width="1452" height="274" key="GridCell.Tab.0.center/0.0.1473.864@0.0.1473.864" timestamp="1622576898202" />
+    <state width="1452" height="274" key="GridCell.Tab.0.left" timestamp="1622576898201">
+      <screen x="0" y="0" width="1473" height="864" />
+    </state>
+    <state width="1452" height="274" key="GridCell.Tab.0.left/0.0.1473.864@0.0.1473.864" timestamp="1622576898201" />
+    <state width="1452" height="274" key="GridCell.Tab.0.right" timestamp="1622576898202">
+      <screen x="0" y="0" width="1473" height="864" />
+    </state>
+    <state width="1452" height="274" key="GridCell.Tab.0.right/0.0.1473.864@0.0.1473.864" timestamp="1622576898202" />
+    <state width="1452" height="277" key="GridCell.Tab.1.bottom" timestamp="1622576489569">
+      <screen x="0" y="0" width="1473" height="864" />
+    </state>
+    <state width="1452" height="277" key="GridCell.Tab.1.bottom/0.0.1473.864@0.0.1473.864" timestamp="1622576489569" />
+    <state width="1452" height="277" key="GridCell.Tab.1.center" timestamp="1622576489569">
+      <screen x="0" y="0" width="1473" height="864" />
+    </state>
+    <state width="1452" height="277" key="GridCell.Tab.1.center/0.0.1473.864@0.0.1473.864" timestamp="1622576489569" />
+    <state width="1452" height="277" key="GridCell.Tab.1.left" timestamp="1622576489569">
+      <screen x="0" y="0" width="1473" height="864" />
+    </state>
+    <state width="1452" height="277" key="GridCell.Tab.1.left/0.0.1473.864@0.0.1473.864" timestamp="1622576489569" />
+    <state width="1452" height="277" key="GridCell.Tab.1.right" timestamp="1622576489569">
+      <screen x="0" y="0" width="1473" height="864" />
+    </state>
+    <state width="1452" height="277" key="GridCell.Tab.1.right/0.0.1473.864@0.0.1473.864" timestamp="1622576489569" />
+>>>>>>> c7bad9db2fd4ac6385f988bc191667eee4a6ed70
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
