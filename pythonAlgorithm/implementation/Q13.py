@@ -1,13 +1,14 @@
 from itertools import combinations
 
 n,m = map(int, input().split())
-graph = [[0,0,1,0,0],[0,0,2,0,1],[0,1,2,0,0],[0,0,1,0,0],[0,0,0,0,2]]
+graph = []
+# graph = [[0,0,1,0,0],[0,0,2,0,1],[0,1,2,0,0],[0,0,1,0,0],[0,0,0,0,2]]
 # graph = [[0,2,0,1,0],[1,0,1,0,0],[0,0,0,0,0],[2,0,0,1,1],[2,2,0,1,2]]
-# graph = []
+# graph = [[1,2,0,2,1],[1,2,0,2,1],[1,2,0,2,1],[1,2,0,2,1],[1,2,0,2,1]]
 house,chicken = [], []
 
-# for _ in range(n):
-#     graph.append(list(map(int, input().split())))
+for _ in range(n):
+    graph.append(list(map(int, input().split())))
 
 for i in range(n):
     for j in range(n):
@@ -19,15 +20,13 @@ for i in range(n):
             pass
 
 candidates = list(combinations(chicken,m)) #all combinations
-# print(candidates)
+
 def get_sum(candidate):
-    dist, sum = 1e9,0
+    sum = 0
     for hx, hy in house:
+        dist = 1e9
         for cx, cy in candidate:
-            diff = abs(hx-cx) + abs(hy-cy)
-            if diff<dist:
-                dist = diff
-            # dist = min(dist, abs(hx-cx) + abs(hy-cy))
+            dist = min(dist, abs(hx-cx) + abs(hy-cy))
         sum += dist
     return sum
 result = 1e9
