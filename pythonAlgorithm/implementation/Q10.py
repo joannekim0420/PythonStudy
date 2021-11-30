@@ -19,7 +19,7 @@ for i in range(len_lock):
     for j in range(len_lock):
         try_lock[i+len_lock][j+len_lock] = lock[i][j]
 
-def check(tmp):
+def check(tmp): 
     length = len(tmp) // 3
     for i in range(length, length*2):
         for j in range(length, length*2):
