@@ -1,45 +1,39 @@
 from collections import deque
 
 n, k = map(int, input().split())
-data = []
 
-for _ in range(n):
-    data.append(list(map(int, input().split())))
+graph, virus = [], []
 
-s,X,Y = map(int, input().split())
+for i in range(n):
+    graph.append(list(map(int, input().split())))
+    for j in range(n):
+        if graph[i][j] != 0:
+            virus.append((graph[i][j], i, j))
 
-# print(data)
-dx = [-1,1,0,0]
-dy = [0,0,-1,1]
+dx = [0, 0, -1, 1]
+dy = [-1, 1, 0, 0]
 
-# def dfs(x,y):
-#     if x<=-1 or x>=n or y<=-1 or y>=n:
-#         return False
-#     if data[x][y] == 1:
-#
-def bfs(x,y, s):
-    queue = deque()
-    queue.append((x,y))
-    while s>0:
-        x, y = queue.popleft()
-        for i in range(4):
-            nx = x+dx[i]
-            ny = y+dy[i]
-            if nx <0 or ny<0 or nx>=n or ny>=n:
-                continue
-            if data[nx][ny] == 0:
-                if data[x][y] == 1:
-                    data[nx][ny] = 1
-                elif data[x][y] == 2:
-                    data[nx][ny] =2
-                elif data[x][y] == 3:
-                    data[nx][ny] = 3
-                else:
-                    continue
-                queue.append((nx,ny))
-            else:
-                continue
-        s-=1
-    return data[X-1][Y-1]
-print(bfs(0,0,s))
+S, X ,Y = map(int, input().split())
 
+def spread_virus(s, X, Y):
+    time = 0
+    q = deque(virus)
+    while q:
+        if time == s:
+            break
+
+        for _ in range(len(q)):
+            virus_num, a, b = q.popleft()
+            for i in range(4):
+                nx = a + dx[i]
+                ny = b + dy[i]
+
+                if nx >= 0 and nx<n and ny>=0 and ny<n and graph[a][b]!=0:
+                    graph[nx][ny] = graph[a][b]
+                    q.append((graph[nx][ny],a,b))
+                else: continue
+        time +=1
+    return graph[X-1][Y-1]
+
+virus.sort()
+print(spread_virus(S, X, Y))
