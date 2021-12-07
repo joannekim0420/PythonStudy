@@ -1,31 +1,35 @@
-def solution(N, stages):
-    answer = []
-    fail_rate = []
-    count = [0 for i in range(N+2)]
-    stages.sort()
-    #count를 for문 하나로 쉽게 할 수 있는 방법은 stages.count(c)
-    # for i in stages:
-    #     count[i] += 1
-
-    length = len(stages)
-
-    for c in range(1, N+1):
-        s_count = stages.count(c)
-        if length != 0:
-            fail = s_count/length
-            # fail = count[c]/length
-        else:
-            fail = 0
-        fail_rate.append((c, fail))
-        # length -= count[c]
-        length -= s_count
-    print(fail_rate)
-    fail_rate = sorted(fail_rate, key=lambda x: x[1], reverse=True)
-    answer = [i[0] for i in fail_rate]
-
-    return answer
-
 N = 5
 stages = [2,1,2,6,2,4,3,3]
 # stages = [4,4,4,4,4]
+
+
+def solution(N, stages):
+    player_cur_stage = [0]*(N+1)
+    total_clear = [0]*(N+1)
+    for i in stages:
+        player_cur_stage[i-1] +=1
+        for j in range(i):
+            total_clear[j] +=1
+
+    failure_rate = []
+    for i, (c,t) in enumerate(zip(player_cur_stage, total_clear)):
+        if t != 0 and i!=N:
+            failure_rate.append((i+1,c/t))
+        elif t==0 and i!=N:
+            failure_rate.append((i+1, 0))
+        else: pass
+
+    answer = sorted(failure_rate, key=lambda x: (-x[1],x[0]))
+    answer = [i[0] for i in answer]
+    return answer
+
 print(solution(N, stages))
+
+
+
+
+
+
+
+
+
