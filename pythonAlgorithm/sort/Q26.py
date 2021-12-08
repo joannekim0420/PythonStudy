@@ -20,16 +20,6 @@ while len(heap) != 1:
 print(result)
 
 #list#
-# cards = []
-# for i in range(n):
-#     cards.append(int(input()))
-#
-# cards.sort()
-# sum = 0
-# for i in range(len(cards)):
-#     if i==0:
-#         a = sum+cards[i]
-#     else:
-#         a = a+cards[i]
-#         sum += a
-# print(sum)
+#리스트로 안 됨!
+#예외
+# [30,40,50,60,90]
