@@ -36,4 +36,11 @@ while len(cards) != 1:
     heapq.heappush(cards, sum_cand)
     sum_all += sum_cand
 
+<<<<<<< HEAD
 print(sum_all)
+=======
+#list#
+#리스트로 안 됨!
+#예외
+# [30,40,50,60,90]
+>>>>>>> 9f5dd3daa6825c5781da5e45e56748800665ac0b
