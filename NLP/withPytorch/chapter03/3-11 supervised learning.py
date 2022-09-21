@@ -16,7 +16,7 @@ for epoch_i in range(n_epochs):
         #step3 calculcate loss
         loss = bce_loss(y_pred, y_target)
 
-        #step4 back propagation
+        #step4 back propagation , compute gradient
         loss.backward()
 
         #step5 update parameter with optimizer
