@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 class Model(nn.Module):
-    def __init__(self, hidden_dim, input_dim, n_layers, n_classes, vocab_size, dropout_p=0.5, , device="cuda"):
+    def __init__(self, hidden_dim, input_dim, n_layers, n_classes, vocab_size, dropout_p=0.5, device="cuda"):
         super().__init__()
         self.hidden_dim = hidden_dim
         self.n_layers = n_layers
