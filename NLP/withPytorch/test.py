@@ -1,5 +1,7 @@
 import torch
 
+print(torch.cuda.is_available())
+
 x = torch.randn(2,3,5)
 print("x",x)
 print("x.size():",x.size())
